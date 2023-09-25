@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Document</title>
+    <title>Submit Fact</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <h1>submit facts</h1>
-    <form>
-        <label for="usr_name">Enter your name:</label><br>
-        <input type="text" id="usr_name" name="usr_name"><br>
-        <label for="fact">Fact:</label><br>
-        <textarea id="fact"></textarea>
-        <input type="submit" value="Submit">
-    </form> 
+    <div class="container">
+        <h1>Submit a new fact!</h1>
+        <form>
+            <div class="center-form">
+                <label for="usr_name">
+                    <h3>Enter your name:</h3>
+                </label><br>
+                <input type="text" id="usr_name" name="usr_name"><br>
+                <label for="fact">
+                    <h3>Fact:</h3>
+                </label><br>
+                <textarea id="fact"></textarea><br>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
