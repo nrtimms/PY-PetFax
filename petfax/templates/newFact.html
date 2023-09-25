@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>submit facts</h1>
+    <form>
+        <label for="usr_name">Enter your name:</label><br>
+        <input type="text" id="usr_name" name="usr_name"><br>
+        <label for="fact">Fact:</label><br>
+        <textarea id="fact"></textarea>
+        <input type="submit" value="Submit">
+    </form> 
+</body>
+</html>
